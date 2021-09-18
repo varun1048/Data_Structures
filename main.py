@@ -10,6 +10,5 @@ for x in tests:
         x['inputs']['query']
         )
  
-
     output(tests.index(x),result,x['output'])
 
