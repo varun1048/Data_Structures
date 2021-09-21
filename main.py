@@ -1,6 +1,7 @@
 from ProfileInformation import User 
 from Database import UserDatabase
-from BinaryTree import TreeNode
+from BinaryTree import TreeNode ,BinaryTree
+
 import os
 os.system('cls')
 
@@ -29,26 +30,28 @@ node0.right=node2
 tree = node0
 
 tree_tuple = ((1,3,None),2,((None,3,4),5,(6,7,8)))
-
-def paser_tuple(data):
-    # print(data)
-    if isinstance(data,tuple) and len(data)==3:
-        node =  TreeNode(data[1])
-        node.left = paser_tuple(data[0])
-        node.right = paser_tuple(data[2])
-    elif data is None:
-        node = None
-    else:
-        node = TreeNode(data)
-    return node 
-
-tree = paser_tuple(tree_tuple)
-print(tree.right.right.key)
-
-        
+tree= BinaryTree.parse_tuple(tree_tuple)
+print(tree.height())
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
