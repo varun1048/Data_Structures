@@ -10,13 +10,13 @@ class Node:
 a = Node("a")
 b = Node("b")
 c = Node("c")
-d = Node("d")
+# d = Node("d")
 
 q = Node("q")
 
 a.next = b
 b.next = c
-c.next = d
+# c.next = d
 
 def alphabet_node()->Node:
     a = Node("a")
@@ -28,12 +28,28 @@ def alphabet_node()->Node:
     
     a.next = b
     b.next = c
-    c.next = d
-    d.next = e
-    e.next = f
+    # c.next = d
+    # d.next = e
+    # e.next = f
     
     return a
 
+def alphabet_node_2()->Node:
+    q = Node("q")
+    r = Node("r")
+    s = Node("s")
+
+    
+    q.next = r
+    r.next = s
+
+    a = Node("a")
+    b = Node("b")
+    
+    a.next = b
+    b.next = c
+    
+    return a , q
 
 def nums_node()->Node:
     a = Node(2)
