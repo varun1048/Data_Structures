@@ -28,6 +28,7 @@ def valkai_oru_vattam(head:Node)->Node:
     while current != None:
         arr.append(current)
         current = current.next
+        
     arr = arr[::-1]
     for i , v in enumerate(arr):
         try:
@@ -42,6 +43,6 @@ def valkai_oru_vattam(head:Node)->Node:
 
 def start()->None:
     node =  valkai_oru_vattam(alphabet_node())
-    # print(node)
     display_linkend_list(node) 
+    # print(node)
     
