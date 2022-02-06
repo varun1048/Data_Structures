@@ -14,4 +14,11 @@ import zip_node
 # insert.start()
 # find_index_node.start()
 # reverse.start()
-zip_node.start()
+# zip_node.start()
+
+from  linked_list import start as all_linked_list
+if __name__ == "__main__":
+    all_linked_list()
+    
+    
+    
